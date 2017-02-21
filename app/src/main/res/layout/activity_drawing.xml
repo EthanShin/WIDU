@@ -14,5 +14,25 @@
         class="com.example.avoirom.widu.DrawingActivity$Paper"
         android:id="@+id/paper"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_redo" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_redo"
+        android:text="REDO"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="onClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_undo"
+        android:text="UNDO"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/btn_redo"
+        android:onClick="onClick" />
+
 </RelativeLayout>
